@@ -1,9 +1,12 @@
 {
   "name": "basic-ui",
   "version": "0.1.0",
-  "private": true,
+  "description": "vue基础UI组件库, 参考element-ui",
+  "private": false,
+  "author": "Lijiajie",
+  "main": "lib/basic-ui.umd.min.js",
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "lib": "vue-cli-service build --target lib --dest lib packages/index.js"
@@ -41,5 +44,15 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitee.com:ljj1996/basic-ui.git"
+  },
+  "keywords": [],
+  "license": "ISC"
 }

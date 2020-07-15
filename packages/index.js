@@ -1,3 +1,4 @@
+/* eslint-disable */
 import BasicEmpty from './empty'
 import Emoji from './emoji'
 // 存储组件列表
