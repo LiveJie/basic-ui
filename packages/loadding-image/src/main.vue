@@ -5,8 +5,9 @@
   </div>
 </template>
 <script>
-import defaultImg from '@/assets/images/loadding.jpg'
+import defaultImg from '../images/loadding.jpg'
 export default {
+    name: "BasicLoaddingImage",
     model: {
         prop: 'value',
         event: 'changeValue'

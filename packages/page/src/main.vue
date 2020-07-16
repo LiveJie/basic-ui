@@ -17,7 +17,7 @@
 
 <script>
 export default {
-    name: 'Page',
+    name: 'BasicPage',
     props: {
         change: {
             type: Function,
@@ -153,13 +153,13 @@ export default {
                 user-select: none;
                 &.on {
                     color: #fff;
-                    @include bg_color;
-                    @include solid_color;
+                    background: #ef5924;
+                    border: 1px solid  #ef5924;
                 }
                 &:hover {
                     color: #fff;
-                    @include bg_color;
-                    @include solid_color;
+                    background: #ef5924;
+                    border: 1px solid  #ef5924;
                 }
             }
         }

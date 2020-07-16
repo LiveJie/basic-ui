@@ -32,6 +32,7 @@
  * @example <UpdateImageModule :toast="errorToast" />
  */
 export default {
+    name: "BasicUpdateImage",
     model: {
         prop: 'value',
         event: 'changeValue'

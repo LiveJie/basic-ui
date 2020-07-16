@@ -1,5 +1,5 @@
 {
-  "name": "basic-ui",
+  "name": "basic-vue-ui",
   "version": "0.1.0",
   "description": "vue基础UI组件库, 参考element-ui",
   "private": false,
