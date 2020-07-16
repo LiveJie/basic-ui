@@ -1,6 +1,6 @@
 <template>
   <div class="empty-wrapper">
-    <img src="../images/empty.png" alt="">
+    <img src="@/public/images/empty.png" alt="">
     <p>暂无相关内容</p>
   </div>
 </template>

@@ -1,7 +1,7 @@
-import BasicEmpty from './src/main'
+import BasicPage from './src/main'
 
-BasicEmpty.install = function (Vue) {
-  Vue.component(BasicEmpty.name, BasicEmpty)
+BasicPage.install = function (Vue) {
+  Vue.component(BasicPage.name, BasicPage)
 }
 
-export default BasicEmpty
+export default BasicPage

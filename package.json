@@ -1,6 +1,6 @@
 {
   "name": "basic-vue-ui",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "vue基础UI组件库, 参考element-ui",
   "private": false,
   "author": "Lijiajie",
@@ -13,8 +13,10 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "css-loader": "^3.6.0",
     "sass": "^1.26.10",
     "sass-loader": "^9.0.2",
+    "style-loader": "^1.2.1",
     "vue": "^2.6.11"
   },
   "devDependencies": {

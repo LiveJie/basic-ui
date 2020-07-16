@@ -1,7 +1,7 @@
-import BasicEmpty from './src/main'
+import BasicUpdateImage from './src/main'
 
-BasicEmpty.install = function (Vue) {
-  Vue.component(BasicEmpty.name, BasicEmpty)
+BasicUpdateImage.install = function (Vue) {
+  Vue.component(BasicUpdateImage.name, BasicUpdateImage)
 }
 
-export default BasicEmpty
+export default BasicUpdateImage

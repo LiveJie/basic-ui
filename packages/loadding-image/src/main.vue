@@ -5,7 +5,7 @@
   </div>
 </template>
 <script>
-import defaultImg from '../images/loadding.jpg'
+import defaultImg from '@/public/images/loadding.jpg'
 export default {
     name: "BasicLoaddingImage",
     model: {
