@@ -1,7 +1,7 @@
 <template>
     <div class="page-wrapper">
         <div class="page-comment">
-            <div :class="currentPage === 1 ? 'pre-wrapper off': 'pre-wrapper'" @click="prePage" title="上一页">&lt;</div>
+            <div :class="(currentPage === 1) ? 'pre-wrapper off': 'pre-wrapper'" @click="prePage" title="上一页">&lt;</div>
             <div class="page-list">
                 <div
                     :class="item === currentPage ? 'list on': 'list'"

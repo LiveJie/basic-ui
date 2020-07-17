@@ -1,6 +1,6 @@
 <template>
   <div class="empty-wrapper">
-    <img src="@/public/images/empty.png" alt="">
+    <img :src="imgUrl" alt="">
     <p>暂无相关内容</p>
   </div>
 </template>
@@ -12,6 +12,7 @@ export default {
     },
     data () {
         return {
+          imgUrl: require("@/packages/static/images/empty.png")
         }
     },
     mounted () {

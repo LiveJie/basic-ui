@@ -1,18 +1,29 @@
 const path = require('path')
 module.exports = {
     devServer: {
-        port: 8088
+        port: 8088,
+        overlay: {
+            warnings: false,
+            errors: false
+        },
     },
+    publicPath: './',
+    assetsDir: '',
     outputDir: 'lib',
+    lintOnSave: false,
     pages: {
         index: {
-        entry: 'examples/main.js',
-        template: 'public/index.html',
-        filename: 'index.html'
+            entry: 'examples/main.js',
+            template: 'public/index.html',
+            filename: 'index.html',
+            chunks: ['chunk-vendors', 'chunk-common', 'index']
         }
     },
     pluginOptions: {}, // 第三方插件配置
     configureWebpack: {
+        output: { // 输出重构  打包编译后的 文件名称  
+            filename: `[name].[hash].js`,
+        },
         resolve: {
             alias: {
               '@': path.join(__dirname, '/'),
@@ -41,16 +52,21 @@ module.exports = {
             ]
         }
     },
-    // 扩展 webpack 配置，使 packages 加入编译
-    chainWebpack: config => {
-        config.module
-        .rule('js')
-        .include.add(path.resolve(__dirname, 'packages')).end()
-        .use('babel')
-        .loader('babel-loader')
-        .tap(options => {
-            // 修改它的选项...
-            return options
-        })
-    }
+  // 修改打包后img文件名
+  chainWebpack: config => {
+    config.module
+      .rule('images')
+      .use('url-loader')
+      .tap(options => {
+        return {
+          limit: 4096,
+          fallback: {
+            loader: 'file-loader',
+            options: {
+              name: `img/[name].[hash].[ext]`
+            }
+          }
+        };
+      })
+  }
 }

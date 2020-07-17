@@ -6,19 +6,19 @@
     <basic-emoji></basic-emoji>
     <basic-page></basic-page>
     <basic-update-image></basic-update-image>
-    <basic-loadding-image></basic-loadding-image>
-    <Empty />
+    <!-- <basic-loadding-image></basic-loadding-image> -->
+    <!-- <Empty /> -->
   </div>
 </template>
 
 <script>
 // import TestButton from './TestButton'
 // import emptyPng from "@/public/images/empty.png"
-import Empty from "../packages/empty"
+// import Empty from "../packages/empty"
 export default {
   components: {
     // TestButton,
-    Empty
+    // Empty
   },
   data(){
     return {

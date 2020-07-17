@@ -5,7 +5,6 @@
   </div>
 </template>
 <script>
-import defaultImg from '@/public/images/loadding.jpg'
 export default {
     name: "BasicLoaddingImage",
     model: {
@@ -29,7 +28,7 @@ export default {
     data () {
         return {
             imgStatus: false,
-            imgDefaultValue: defaultImg
+            imgDefaultValue: require("@/packages/assets/images/loadding.jpg")
         }
     },
     watch: {
