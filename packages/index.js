@@ -1,14 +1,14 @@
 /* eslint-disable */
 import BasicEmpty from './empty'
 import BasicEmoji from './emoji'
-// import BasicLoaddingImage from './loadding-image'
+import BasicLoaddingImage from './loadding-image'
 import BasicPage from './page'
 import BasicUpdateImage from './update-image'
 // 存储组件列表
 const components = [
     BasicEmpty,
     BasicEmoji,
-    // BasicLoaddingImage,
+    BasicLoaddingImage,
     BasicPage,
     BasicUpdateImage,
 ]
@@ -29,7 +29,7 @@ export default {
   // 以下是具体的组件列表
   BasicEmpty,
   BasicEmoji,
-  // BasicLoaddingImage,
+  BasicLoaddingImage,
   BasicPage,
   BasicUpdateImage
 }

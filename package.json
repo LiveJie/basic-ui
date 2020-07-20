@@ -1,6 +1,6 @@
 {
   "name": "basic-vue-ui",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "description": "vue基础UI组件库, 参考element-ui",
   "private": false,
   "author": "Lijiajie",

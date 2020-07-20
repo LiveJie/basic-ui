@@ -1,6 +1,6 @@
 <template>
   <div class="img-module">
-    <img :src="imgDefaultValue" :alt="alt" v-show="!imgStatus"  align="align">
+    <img src="http://oss.humorjie.vip/loadding.jpg" :alt="alt" v-show="!imgStatus"  align="align">
     <img :src="src" :alt="alt" v-show="imgStatus" @load="loadImage"  align="align">
   </div>
 </template>
@@ -28,7 +28,6 @@ export default {
     data () {
         return {
             imgStatus: false,
-            imgDefaultValue: require("@/packages/assets/images/loadding.jpg")
         }
     },
     watch: {

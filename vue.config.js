@@ -29,44 +29,17 @@ module.exports = {
               '@': path.join(__dirname, '/'),
             },
         },
-        module: {
-            rules: [ // 可在package.json 配置顶层 sideEffects: false
-                // {
-                //     test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
-                //     use:[
-                //             {
-                //                 loader: "file-loader",
-                //                 options: {
-                //                     name: 'img/[name].[ext]?[hash]'
-                //                 }
-                //             },
-                //             // {
-                //             //     loader: 'url-loader',
-                //             //     options: {
-                //             //         limit: 10000,
-                //             //         name: 'img/[name].[ext]?[hash]'
-                //             //     }
-                //             // }
-                //     ]
-                // },
-            ]
-        }
+        // module: {
+        //     rules: [ // 可在package.json 配置顶层 sideEffects: false
+        //       {
+        //         test: /\.(svg|otf|ttf|woff2?|eot|gif|png|jpe?g)(\?\S*)?$/,
+        //         loader: 'url-loader',
+        //         query: {
+        //           limit: 8196,
+        //           name: path.posix.join('static', '[name].[hash:7].[ext]')
+        //         }
+        //       }
+        //     ]
+        // }
     },
-  // 修改打包后img文件名
-  chainWebpack: config => {
-    config.module
-      .rule('images')
-      .use('url-loader')
-      .tap(options => {
-        return {
-          limit: 4096,
-          fallback: {
-            loader: 'file-loader',
-            options: {
-              name: `img/[name].[hash].[ext]`
-            }
-          }
-        };
-      })
-  }
 }

@@ -7,7 +7,8 @@
     <basic-page></basic-page>
     <basic-update-image></basic-update-image>
     <!-- <basic-loadding-image></basic-loadding-image> -->
-    <!-- <Empty /> -->
+    <!-- <Empty />
+    <Loadding /> -->
   </div>
 </template>
 
@@ -15,10 +16,12 @@
 // import TestButton from './TestButton'
 // import emptyPng from "@/public/images/empty.png"
 // import Empty from "../packages/empty"
+// import Loadding from "../packages/loadding-image"
 export default {
   components: {
     // TestButton,
-    // Empty
+    // Empty,
+    // Loadding
   },
   data(){
     return {
