@@ -1,0 +1,4 @@
+{
+    "empty": "./packages/empty/index.js",
+    "page": "./packages/page/index.js"
+}

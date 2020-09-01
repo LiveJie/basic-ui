@@ -2,10 +2,11 @@
   <div>
       1132132
     <!-- <test-button></test-button> -->
-    <basic-empty></basic-empty>
-    <basic-emoji></basic-emoji>
+    <!-- <basic-empty></basic-empty>
+    <basic-emoji></basic-emoji> -->
     <basic-page></basic-page>
-    <basic-update-image></basic-update-image>
+    <basic-page></basic-page>
+    <!-- <basic-update-image></basic-update-image> -->
     <!-- <basic-loadding-image></basic-loadding-image> -->
     <!-- <Empty />
     <Loadding /> -->

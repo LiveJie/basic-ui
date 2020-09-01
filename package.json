@@ -7,17 +7,25 @@
   "main": "lib/basic-ui.umd.min.js",
   "scripts": {
     "dev": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "webpack --config webpack.pro.js",
+    "dist": "npm run lib && webpack --config webpack.conponents.js",
     "lint": "vue-cli-service lint",
     "lib": "vue-cli-service build --target lib --dest lib packages/index.js"
   },
   "dependencies": {
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.1.0",
     "core-js": "^3.6.5",
-    "css-loader": "^3.6.0",
+    "css-loader": "^4.2.2",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "html-webpack-plugin": "^4.4.1",
     "sass": "^1.26.10",
     "sass-loader": "^9.0.2",
     "style-loader": "^1.2.1",
-    "vue": "^2.6.11"
+    "url-loader": "^4.1.0",
+    "vue": "^2.6.11",
+    "vue-loader": "^15.9.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.4.0",
@@ -26,7 +34,8 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "webpack-cli": "^3.3.12"
   },
   "eslintConfig": {
     "root": true,
