@@ -21,7 +21,7 @@ Vue.use(BasicPage)
 Modern browsers and Internet Explorer 10+.
 
 ### Doc Preview address
-See [Basic-vue-ui Doc](http://doc.humorjie.vip)
+[Basic-vue-ui Doc](http://doc.humorjie.vip)
 
 ### Author related
-See [author blog](http://blog.humorjie.vip)
+[author blog](http://blog.humorjie.vip)
