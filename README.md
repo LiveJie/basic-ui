@@ -1,24 +1,27 @@
 # basic-ui
 
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
+## Install
+```shell
+npm install basic-vue-ui -S
 ```
 
-### Compiles and minifies for production
-```
-yarn build
-```
+## Quick Start
+``` javascript
+import Vue from 'vue'
+import BasicUI from 'basic-vue-ui/lib/basic-vue-ui.umd.min'
+import "basic-vue-ui/lib/basic-vue-ui.css"
+Vue.use(BasicUI)
 
-### Lints and fixes files
-```
-yarn lint
-```
+// or
+import BasicPage from 'basic-vue-ui/lib/components/page'
+import "basic-vue-ui/lib/basic-vue-ui.css"
+Vue.use(BasicPage)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Browser Support
+Modern browsers and Internet Explorer 10+.
+
+### Doc Preview address
+See [Basic-vue-ui Doc](http://doc.humorjie.vip/)
+
+### Author related
+See [author blog](http://blog.humorjie.vip/)
