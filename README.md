@@ -16,7 +16,7 @@ Vue.use(BasicUI)
 import BasicPage from 'basic-vue-ui/lib/components/page'
 import "basic-vue-ui/lib/basic-vue-ui.css"
 Vue.use(BasicPage)
-
+```
 ## Browser Support
 Modern browsers and Internet Explorer 10+.
 
